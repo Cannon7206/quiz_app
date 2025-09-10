@@ -12,3 +12,4 @@
 /home/christian/dev/C#/quiz_app/obj/Debug/net9.0/quiz_app.pdb
 /home/christian/dev/C#/quiz_app/obj/Debug/net9.0/quiz_app.genruntimeconfig.cache
 /home/christian/dev/C#/quiz_app/obj/Debug/net9.0/ref/quiz_app.dll
+/home/christian/dev/C#/quiz_app/obj/Debug/net9.0/quiz_app.sourcelink.json
