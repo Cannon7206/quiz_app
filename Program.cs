@@ -36,8 +36,13 @@ namespace Program
                     Console.WriteLine("Invalid Respone!");
                 }
             }
-            Console.WriteLine("Score: ", correct, "/", total, "");
-
+            string b = Convert.ToString(correct);
+            string c = Convert.ToString(total);
+            Console.Write("Score: ");
+            Console.Write(b);
+            Console.Write("/");
+            Console.Write(c);
+            Console.Write(" .\n");
         }
 
         public static string[] QuestionList(int number)
