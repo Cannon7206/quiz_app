@@ -75,6 +75,7 @@ namespace Program
         }
         public static void PrintQ(string[] list)
         {
+            Console.WriteLine("");
             for (int i = 0; i <= 4; i++)
             {
                 Console.WriteLine(list[i]);
