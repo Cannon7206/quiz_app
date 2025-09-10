@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 
 namespace Program
 {
@@ -6,53 +6,40 @@ namespace Program
     {
         static void Main()
         {
-            string input;
-            bool running = true;
-            while (running)
-            {
-                input = Console.ReadLine();
-                if (int.TryParse(input, out int number))
-                {
-                    switch (number)
-                    {
-                        case 1:
-                            Console.WriteLine("1. Start Quiz!");
-                            Test();
-                            break;
-                        case 2:
-                            Console.WriteLine("2. Close Program!");
-                            running = false;
-                            break;
-                        default:
-                            Console.WriteLine("Invalid Option!");
-                            break;
-                    }
-                }
-            }
+            Test();
         }
         public static void Test()
         {
-            bool run = true;
-            int i = 1;
             string[] res;
-            int input;
+            string input;
+            int correct = 0;
+            int total = 0;
             Console.WriteLine("Starting Quiz!!");
             Console.WriteLine("Answer by typing in 1, 2, 3, or 4");
-            while (run)
+            for (int i = 1; i <= 10;)
             {
-                if (QuestionList(i)[0] == "end")
+                res = QuestionList(i);
+                PrintQ(res);
+                input = Console.ReadLine() + "";
+                if (input == "1" || input == "2" || input == "3" || input == "4")
                 {
-                    run = false;
+                    bool a = Check(res[5], input);
+                    total++;
+                    if (a)
+                    {
+                        correct++;
+                    }
+                    i++;
                 }
                 else
                 {
-                    res = QuestionList(i);
-                    PrintQ(res);
-                    input = Console.Read();
-                    Check(res[5], input);
+                    Console.WriteLine("Invalid Respone!");
                 }
             }
+            Console.WriteLine("Score: ", correct, "/", total, "");
+
         }
+
         public static string[] QuestionList(int number)
         {
             string[] res;
@@ -72,23 +59,18 @@ namespace Program
             };
             return res;
         }
-        public static void Check(string a, int b)
+        public static bool Check(string a, string b)
         {
-            if (b > 0 && b <= 4)
+            string x = Convert.ToString(b);
+            if (x == a)
             {
-                string x = Convert.ToString(b);
-                if (x == a)
-                {
-                    Console.WriteLine("Correct Answer!");
-                }
-                else
-                {
-                    Console.WriteLine("Incorrect Answer!");
-                }
+                Console.WriteLine("Correct Answer!");
+                return true;
             }
             else
             {
-                Console.WriteLine("Invalid Option");
+                Console.WriteLine("Incorrect Answer!");
+                return false;
             }
         }
         public static void PrintQ(string[] list)
