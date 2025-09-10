@@ -40,7 +40,7 @@ namespace Program
             Console.WriteLine("Answer by typing in 1, 2, 3, or 4");
             while (run)
             {
-                if (QuestionList(i)[1] == "end")
+                if (QuestionList(i)[0] == "end")
                 {
                     run = false;
                 }
@@ -49,7 +49,7 @@ namespace Program
                     res = QuestionList(i);
                     PrintQ(res);
                     input = Console.Read();
-                    Check(res[6], input);
+                    Check(res[5], input);
                 }
             }
         }
@@ -93,7 +93,7 @@ namespace Program
         }
         public static void PrintQ(string[] list)
         {
-            for (int i = 1; i <= 4; i++)
+            for (int i = 0; i <= 4; i++)
             {
                 Console.WriteLine(list[i]);
             }
