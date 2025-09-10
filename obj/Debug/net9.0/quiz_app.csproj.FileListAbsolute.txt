@@ -1,0 +1,14 @@
+/home/christian/dev/C#/quiz_app/bin/Debug/net9.0/quiz_app
+/home/christian/dev/C#/quiz_app/bin/Debug/net9.0/quiz_app.deps.json
+/home/christian/dev/C#/quiz_app/bin/Debug/net9.0/quiz_app.runtimeconfig.json
+/home/christian/dev/C#/quiz_app/bin/Debug/net9.0/quiz_app.dll
+/home/christian/dev/C#/quiz_app/bin/Debug/net9.0/quiz_app.pdb
+/home/christian/dev/C#/quiz_app/obj/Debug/net9.0/quiz_app.GeneratedMSBuildEditorConfig.editorconfig
+/home/christian/dev/C#/quiz_app/obj/Debug/net9.0/quiz_app.AssemblyInfoInputs.cache
+/home/christian/dev/C#/quiz_app/obj/Debug/net9.0/quiz_app.AssemblyInfo.cs
+/home/christian/dev/C#/quiz_app/obj/Debug/net9.0/quiz_app.csproj.CoreCompileInputs.cache
+/home/christian/dev/C#/quiz_app/obj/Debug/net9.0/quiz_app.dll
+/home/christian/dev/C#/quiz_app/obj/Debug/net9.0/refint/quiz_app.dll
+/home/christian/dev/C#/quiz_app/obj/Debug/net9.0/quiz_app.pdb
+/home/christian/dev/C#/quiz_app/obj/Debug/net9.0/quiz_app.genruntimeconfig.cache
+/home/christian/dev/C#/quiz_app/obj/Debug/net9.0/ref/quiz_app.dll

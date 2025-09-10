@@ -1,4 +1,4 @@
-﻿using System.Runtime.Serialization;
+﻿
 
 namespace Program
 {
@@ -6,29 +6,31 @@ namespace Program
     {
         static void Main()
         {
-            Quiz PG = new();
-            int input;
+            string input;
             bool running = true;
             while (running)
             {
-                input = Console.Read();
-                switch (input)
+                input = Console.ReadLine();
+                if (int.TryParse(input, out int number))
                 {
-                    case 1:
-                        Console.WriteLine("1. Start Quiz!");
-                        PG.Test();
-                        break;
-                    case 2:
-                        Console.WriteLine("2. Close Program!");
-                        running = false;
-                        break;
-                    default:
-                        Console.WriteLine("Invalid Option!");
-                        break;
+                    switch (number)
+                    {
+                        case 1:
+                            Console.WriteLine("1. Start Quiz!");
+                            Test();
+                            break;
+                        case 2:
+                            Console.WriteLine("2. Close Program!");
+                            running = false;
+                            break;
+                        default:
+                            Console.WriteLine("Invalid Option!");
+                            break;
+                    }
                 }
             }
         }
-        public void Test()
+        public static void Test()
         {
             bool run = true;
             int i = 1;
